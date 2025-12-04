@@ -1,0 +1,14 @@
+@layer components {
+  .btn {
+    @apply relative overflow-hidden px-6 py-2 rounded-xl;
+    @apply flex flex-row gap-2 items-center justify-center;
+    @apply truncate;
+    @apply hover:cursor-pointer active:cursor-pointer;
+
+    &:disabled,
+    &.btn-disabled,
+    &[aria-disabled='true'] {
+      @apply hover:cursor-default active:cursor-default pointer-events-none;
+    }
+  }
+}

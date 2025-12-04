@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-display: block;
+  src: url('/fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-display: block;
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+}
+
+@layer theme {
+  @theme {
+    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+}
